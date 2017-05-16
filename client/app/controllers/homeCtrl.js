@@ -1,3 +1,3 @@
-app.controller('HomeCtrl', function() {
+app.controller('HomeCtrl', function($scope, UserFact) {
   console.log('Hey! I work!')
 })
