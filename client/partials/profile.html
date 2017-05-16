@@ -1,0 +1,93 @@
+<h1>Adding Entries</h1>
+
+<h3>Entry</h3>
+<form>
+  Site Locality<br>
+  <input ng-model="entryObject.siteLocality" type="text" name="Site Locality"><br>
+  Field No.<br>
+  <input ng-model="entryObject.fieldNo" type="text" name="Field No."><br>
+  Date<br>
+  <input ng-model="entryObject.date" type="text" name="Date"><br>
+  WP<br>
+  <input ng-model="entryObject.wp" type="text" name="WP"><br>
+  Start Time<br>
+  <input ng-model="entryObject.startTime" type="text" name="Start Time"><br>
+  Stop Time<br>
+  <input ng-model="entryObject.stopTime" type="text" name="Stop Time"><br>
+  Surveyors<br>
+  <input ng-model="entryObject.surveyors" type="text" name="Surveryors"><br>
+  Coordinates<br>
+  <input ng-model="entryObject.coordinates" type="text" name="Coordinates"><br>
+  Underwater Visibilty<br>
+  <input ng-model="entryObject.underwaterVis" type="text" name="Underwater Visibility (ft)"><br>
+  Width:
+  min
+  <input ng-model="entryObject.widthMin" type="text" name="min">
+  max
+  <input ng-model="entryObject.widthMax" type="text" name="max">
+  avg
+  <input ng-model="entryObject.widthAvg" type="text" name="avg"><br>
+  Depth:
+  min
+  <input ng-model="entryObject.depthMin" type="text" name="min">
+  max
+  <input ng-model="entryObject.depthMax" type="text" name="max">
+  avg
+  <input ng-model="entryObject.depthAvg" type="text" name="avg"><br>
+  Channel Riparian Structure:
+  <input ng-model="entryObject.channelRipStr" type="text">
+  Steambank Erosion:
+  <input ng-model="entryObject.sBankErosion" type="text">
+  Notable Features at this Site<br>
+  <textarea ng-model="entryObject.notableFeats" rows="10" cols="50"></textarea><br>
+  Weather Conditions<br>
+  <textarea ng-model="entryObject.weather" rows="10" cols="50"></textarea><br>
+  Substrate:
+  Sand
+  <input ng-model="entryObject.sand" type="text" name="sand">
+  Gravel
+  <input ng-model="entryObject.gravel" type="text" name="gravel">
+  Cobble
+  <input ng-model="entryObject.cobble" type="text" name="cobble">
+  Boulder
+  <input ng-model="entryObject.boulder" type="text" name="boulder">
+  Bedrock
+  <input ng-model="entryObject.bedrock" type="text" name="bedrock">
+  Detritus
+  <input ng-model="entryObject.detritus" type="text" name="cobble"><br>
+  Other Notes<br>
+  <textarea ng-model="entryObject.notes" rows="10" cols="50"></textarea>
+  <input type="button" name="Submit" ng-click="addEntry(entryObject)">
+</form>
+
+<div class="entryCard" ng-repeat="entry in entries">
+  <h4>{{entry.id}}</h4>
+  <h4>{{entry.siteLocality}}</h4>
+  <h4>{{entry.fieldNo}}</h4>
+  <h4>{{entry.date}}</h4>
+  <h4>{{entry.wp}}</h4>
+  <h4>{{entry.startTime}}</h4>
+  <h4>{{entry.stopTime}}</h4>
+  <h4>{{entry.surveyors}}</h4>
+  <h4>{{entry.coordinates}}</h4>
+  <h4>{{entry.underwaterVis}}</h4>
+  <h4>{{entry.widthMin}}</h4>
+  <h4>{{entry.widthMax}}</h4>
+  <h4>{{entry.widthAvg}}</h4>
+  <h4>{{entry.depthMin}}</h4>
+  <h4>{{entry.depthMax}}</h4>
+  <h4>{{entry.depthAvg}}</h4>
+  <h4>{{entry.channelRipStr}}</h4>
+  <h4>{{entry.sBankErosion}}</h4>
+  <h4>{{entry.notableFeats}}</h4>
+  <h4>{{entry.weather}}</h4>
+  <h4>{{entry.id}}</h4>
+  <h4>{{entry.sand}}</h4>
+  <h4>{{entry.gravel}}</h4>
+  <h4>{{entry.cobble}}</h4>
+  <h4>{{entry.boulder}}</h4>
+  <h4>{{entry.bedrock}}</h4>
+  <h4>{{entry.detritus}}</h4>
+  <h4>{{entry.notes}}</h4>
+<!--   <h1>{{entry}}</h1> -->
+</div>

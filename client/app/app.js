@@ -5,8 +5,8 @@ app.config(['$routeProvider', function($routeProvider) {
   .when('/', {
     templateUrl: 'partials/home.html',
     controller: 'HomeCtrl'
-  }).when('/addEntry', {
-    templateUrl: 'partials/addEntries.html',
-    controller: 'AddEntryCtrl'
+  }).when('/profile', {
+    templateUrl: 'partials/profile.html',
+    controller: 'ProfileCtrl'
   })
 }])
