@@ -1,0 +1,22 @@
+{
+  "name": "fieldNotes-client",
+  "homepage": "https://github.com/ashleyirwin3/fieldNotes-client",
+  "authors": [
+    "Ashley Irwin <ashleykayirwin3@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+    "dependencies": {
+    "angular": "^1.6.4",
+    "angular-route": "^1.6.4",
+    "bootstrap": "^3.3.7"
+  }
+}
