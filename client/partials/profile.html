@@ -1,6 +1,13 @@
-<h1>Adding Entries</h1>
-
-<h3>Entry</h3>
+<nav class="navbar navbar-default myNav">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">
+        <img alt="Field Notes" src="...">
+      </a>
+    </div>
+  </div>
+</nav>
+<!-- <h3>Entry</h3>
 <form>
   Site Locality<br>
   <input ng-model="entryObject.siteLocality" type="text" name="Site Locality"><br>
@@ -58,37 +65,39 @@
   Other Notes<br>
   <textarea ng-model="entryObject.notes" rows="10" cols="50"></textarea>
   <input type="button" name="Submit" ng-click="addEntry(entryObject)">
-</form>
-
-<div class="entryCard" ng-repeat="entry in entries">
-  <h4>{{entry.id}}</h4>
-  <h4>{{entry.siteLocality}}</h4>
-  <h4>{{entry.fieldNo}}</h4>
-  <h4>{{entry.date}}</h4>
-  <h4>{{entry.wp}}</h4>
-  <h4>{{entry.startTime}}</h4>
-  <h4>{{entry.stopTime}}</h4>
-  <h4>{{entry.surveyors}}</h4>
-  <h4>{{entry.coordinates}}</h4>
-  <h4>{{entry.underwaterVis}}</h4>
-  <h4>{{entry.widthMin}}</h4>
-  <h4>{{entry.widthMax}}</h4>
-  <h4>{{entry.widthAvg}}</h4>
-  <h4>{{entry.depthMin}}</h4>
-  <h4>{{entry.depthMax}}</h4>
-  <h4>{{entry.depthAvg}}</h4>
-  <h4>{{entry.channelRipStr}}</h4>
-  <h4>{{entry.sBankErosion}}</h4>
-  <h4>{{entry.notableFeats}}</h4>
-  <h4>{{entry.weather}}</h4>
-  <h4>{{entry.id}}</h4>
-  <h4>{{entry.sand}}</h4>
-  <h4>{{entry.gravel}}</h4>
-  <h4>{{entry.cobble}}</h4>
-  <h4>{{entry.boulder}}</h4>
-  <h4>{{entry.bedrock}}</h4>
-  <h4>{{entry.detritus}}</h4>
-  <h4>{{entry.notes}}</h4>
-  <input type="button" name="Submit" ng-click="deleteEntry(entry.id)">
-<!--   <h1>{{entry}}</h1> -->
+</form> -->
+<div class="container">
+  <div class="row">
+<div class="entryCard col-sm-4" ng-repeat="entry in entries">
+  <p><h6>General Information</h6>Location: {{entry.siteLocality}}<br>
+  Field Number: {{entry.fieldNo}}<br>
+  Date: {{entry.date}}<br>
+  WP: {{entry.wp}}<br>
+  Start Time: {{entry.startTime}}<br>
+  Stop Time: {{entry.stopTime}}<br>
+  Surveyors: {{entry.surveyors}}<br>
+  Coordinates {{entry.coordinates}}</p>
+  <p><h6>Details</h6>Underwater Visibility: {{entry.underwaterVis}}
+  Width Min: {{entry.widthMin}}<br>
+  Width Max: {{entry.widthMax}}<br>
+  Width Avg: {{entry.widthAvg}}<br>
+  Depth Min: {{entry.depthMin}}<br>
+  Depth Max: {{entry.depthMax}}<br>
+  Depth Avg: {{entry.depthAvg}}<br>
+  Channel Ripirain Structure: {{entry.channelRipStr}}<br>
+  Steambank Erosion: {{entry.sBankErosion}}<br>
+  Notable Features: {{entry.notableFeats}}<br>
+  Weather Conditions: {{entry.weather}}</p>
+  <h6>Substrates</h6>
+  <p>Sand: {{entry.sand}}<br>
+  Gravel: {{entry.gravel}}<br>
+  Cobble: {{entry.cobble}}<br>
+  Boulder: {{entry.boulder}}<br>
+  Bedrock: {{entry.bedrock}}<br>
+  Detritus: {{entry.detritus}}<br>
+  Other Notes: {{entry.notes}}</p>
+  <a class="btn btn-default" role="button" ng-click="deleteEntry(entry.id)">Delete</a>
+  </div>
+</div>
+</div>
 </div>
