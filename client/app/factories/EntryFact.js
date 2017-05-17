@@ -20,6 +20,16 @@ app.factory('EntryFact', function($http) {
       .catch((res) => {
         console.error(res);
       })
+    },
+    deleteEntry : (id) => {
+      return $http
+      .delete(`http://localhost:3000/api/v1/profile/${id}`)
+      .then((res) => {
+        console.log(res)
+      })
+      .catch((res) => {
+        console.error(res)
+      })
     }
   }
 })
