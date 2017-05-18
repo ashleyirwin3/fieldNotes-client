@@ -2,8 +2,9 @@
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="#">
-        <img alt="Field Notes" src="...">
+        <img class="navText" alt="Field Notes" src="...">
       </a>
+      <p class="navbar-text">An online database for wildlife surveying field notes</p>
     </div>
   </div>
 </nav>
@@ -11,7 +12,8 @@
 
 <div class="container">
   <div class="row">
-<div class="entryCard col-sm-4">
+<div class="entryCard-form col-sm-4">
+  <h6>New Entry</h6>
   Site Locality<br>
   <input ng-model="entryObject.siteLocality" type="text" name="Site Locality"><br>
   Field No.<br>
@@ -69,7 +71,7 @@
 </div>
 </div>
 </div>
-</div>
+</div> <br>
 
 
 <div class="container">
