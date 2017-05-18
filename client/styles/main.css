@@ -1,15 +1,29 @@
 body {
-  background-color: lightblue;
+    background-image: url(https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/17191261_10154711030783876_5723283015252605235_n.jpg?oh=b164d31cb485b494ffbc83af755b37aa&oe=59762C10);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
-
 .entryCard {
   padding-left: 2em;
   border-style: solid;
   height: 200px;
   font-size: .8rem;
+  background-color: #ffdab9;
+  overflow: scroll;
+}
+
+.entryCard-form {
+  padding-left: 2em;
+  border-style: solid;
+  display: center;
+  height: 200px;
+  font-size: .8rem;
+  background-color: #fffff0;
+  display: center;
   overflow: scroll;
 }
 
 .myNav {
-  background-color: lightgrey;
+  background-color: #f5fffa;
 }
